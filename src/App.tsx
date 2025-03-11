@@ -1,20 +1,17 @@
-import LoginPage from "./pages/Login"
-import { BrowserRouter as  Routes, Route } from 'react-router-dom';
+import LoginPage from "./pages/Login";
+import { Routes, Route } from "react-router-dom";
 import ScrollToTop from "./utils/scrollToTop";
 import Home from "./pages/Home";
 function App() {
-
-  console.log("LoginPage")
-  
   return (
     <>
-      <ScrollToTop/>
-      <Routes>
-        <Route element={<LoginPage />} path="/" />
-        <Route element={<Home />} path="/home" />
-      </Routes>
-  </>
-  )
+        <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<LoginPage />} />
+          <Route path="/home" element={<Home />} />
+        </Routes>
+    </>
+  );
 }
 
-export default App
+export default App;
