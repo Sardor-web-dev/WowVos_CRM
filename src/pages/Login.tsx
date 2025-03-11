@@ -18,7 +18,7 @@ const LoginPage = () => {
             </label>
             <div className="flex items-center w-[350px] justify-between">
               <label className="flex gap-2">
-              <input type="checkbox" />
+              <input type="radio" />
                 <p>Remember Me</p>
               </label>
               <label>
