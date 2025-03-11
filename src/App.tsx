@@ -1,5 +1,5 @@
 import LoginPage from "./pages/Login"
-import { BrowserRouter as  Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as  Routes, Route } from 'react-router-dom';
 import ScrollToTop from "./utils/scrollToTop";
 import Home from "./pages/Home";
 function App() {
