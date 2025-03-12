@@ -1,11 +1,14 @@
 import { Cordinators } from "@/utils/kordinators";
 import { Statuses } from "@/utils/statuses";
-import { useState } from "react";
 import { cn } from "@/lib/utils";
 
-const SideBar = () => {
-  const [opened, setOpened] = useState(true);
+type props = {
+    opened: boolean;
+    setOpened: React.Dispatch<React.SetStateAction<boolean>>;
+}
 
+
+const SideBar: React.FC<props> = ({opened, setOpened}) => {
   return (
     <>
       <div

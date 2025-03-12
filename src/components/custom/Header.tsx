@@ -5,13 +5,14 @@ import { IoSettingsOutline } from "react-icons/io5"
 import { MdKeyboardArrowDown } from "react-icons/md"
 
 interface HeaderProps {
-  opened: boolean;
+  isSidebarOpen: boolean;
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const Navbar: React.FC<HeaderProps> = ({ opened }) => {
+const Header: React.FC<HeaderProps> = ({ isSidebarOpen }) => {
   return (
     <header className="flex items-center justify-between p-6">
-      {!opened && (
+      {!isSidebarOpen && (
         <img src="/Wowvos-logo.svg" alt="WOWVOS" className="cursor-pointer" />
       )}
 
@@ -47,4 +48,4 @@ const Navbar: React.FC<HeaderProps> = ({ opened }) => {
   )
 }
 
-export default Navbar;
+export default Header
